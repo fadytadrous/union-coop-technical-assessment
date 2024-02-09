@@ -4,8 +4,11 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import pages.SearchPage;
+import pages.SearchResultsPage;
 
 public class base {
 
@@ -13,7 +16,7 @@ public class base {
 
     protected SearchPage searchPage;
 
-    @BeforeClass
+    @BeforeMethod
     public void setup(){
         // Setup WebDriver using WebDriverManager for Chrome
         WebDriverManager.chromedriver().setup();
@@ -30,7 +33,7 @@ public class base {
      * Method to tear down the WebDriver instance after executing tests.
      * Quits the WebDriver session.
      */
-    @AfterClass
+    @AfterMethod
     public void tearDown(){
         // Quit the WebDriver session
         driver.quit();

@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -25,15 +26,23 @@ public class SearchPage {
     public WebElement searchBtn;
 
     @FindBy(css = "div.FPdoLc input.RNmpXc")
-    public WebElement FeelingLuckyBtn;
+    public WebElement feelingLuckyBtn;
 
     @FindBy(css = "div.vOY7J")
-    public WebElement ClearBtn;
+    public WebElement clearBtn;
 
     public void setSearchInput(String input) {
         searchInput.clear();
         searchInput.sendKeys(input);
     }
 
+    public SearchResultsPage clickSearch(){
+        searchBtn.click();
+        return new SearchResultsPage(driver) ;
+    }
 
+    public SearchResultsPage searchUsingEnter(){
+        searchInput.sendKeys(Keys.RETURN);
+        return new SearchResultsPage(driver) ;
+    }
 }
