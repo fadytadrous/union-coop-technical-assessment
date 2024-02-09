@@ -29,7 +29,7 @@ public class SearchResultsPage {
         String searchEntry = searchInput.toLowerCase().replaceAll("\\s", "");
 
         // Wait until search results are visible
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2)); 
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.kb0PBd h3")));
 
         // Find elements once
