@@ -36,7 +36,7 @@ public class SearchTests extends base {
         String searchInput = "union coop";
 
         searchPage.setSearchInput(searchInput);
-        SearchResultsPage searchResultsPage = searchPage.clickSearch();
+        SearchResultsPage searchResultsPage = searchPage.searchUsingEnter();
 
         assertTrue(searchResultsPage.isResultFound(searchInput),
                 "Search results using Enter Button don't match with input");
