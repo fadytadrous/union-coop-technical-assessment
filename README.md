@@ -16,7 +16,7 @@
 |10|Order Tracking| User can track the status of their orders.|||Medium|
 |11|Editing user profile| User can update their account information. |||Low|
 |12|Check disabling different App permisions| App will be working according to the allowed permisions only  |||Medium|
-|13|Check Screen rotation with the app |App will be rotated through various pages.||Medium|
+|13|Check Screen rotation with the app |App will be rotated through various pages.|||Medium|
 |14|Check switching smartphone themes|App will remain working |||Low|
 |15|Check App running in background | App will remain working depending on power saving mode |||Low|
 |16|Reset password using verification code| User reset password with verification code by Email or SMS |User has already registered||High|
