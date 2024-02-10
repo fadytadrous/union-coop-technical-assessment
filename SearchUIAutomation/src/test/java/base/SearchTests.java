@@ -23,7 +23,7 @@ public class SearchTests extends base {
         searchPage.setSearchInput(searchInput);
         SearchResultsPage searchResultsPage = searchPage.clickSearch();
 
-        assertTrue(searchResultsPage.isResultFound(searchInput),
+        assertTrue(searchPage.isResultFound(searchInput,searchResultsPage.searchResultsSelector),
                 "Search results using Click don't match with input");
     }
 
@@ -38,7 +38,7 @@ public class SearchTests extends base {
         searchPage.setSearchInput(searchInput);
         SearchResultsPage searchResultsPage = searchPage.searchUsingEnter();
 
-        assertTrue(searchResultsPage.isResultFound(searchInput),
+        assertTrue(searchPage.isResultFound(searchInput,searchResultsPage.searchResultsSelector),
                 "Search results using Enter Button don't match with input");
     }
 
@@ -70,5 +70,18 @@ public class SearchTests extends base {
 
         assertTrue(driver.getCurrentUrl().contains(searchInput),
                 "Feeling lucky button gets the right url");
+    }
+
+    /**
+     * Test method to verify search suggestions.
+     */
+    @Test
+    public void testSearchSuggestions(){
+        String searchInput = "union coop";
+
+        searchPage.setSearchInput(searchInput);
+
+        assertTrue(searchPage.isResultFound(searchInput,searchPage.suggestionsCssSelector),
+                "Search suggestions don't match with input");
     }
 }
