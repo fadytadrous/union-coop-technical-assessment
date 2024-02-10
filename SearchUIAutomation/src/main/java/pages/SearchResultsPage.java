@@ -13,7 +13,7 @@ public class SearchResultsPage {
         this.driver = driver;
     }
 
-    public String searchResultsSelector = "div.kb0PBd h3";
+    public String searchResultsSelector = "div.kb0PBd h3"; //css element for search results
 
 
 

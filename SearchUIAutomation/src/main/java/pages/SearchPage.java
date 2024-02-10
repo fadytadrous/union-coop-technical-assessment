@@ -39,7 +39,7 @@ public class SearchPage {
     @FindBy(css = "div.vOY7J")
     public WebElement clearBtn;
 
-    public String suggestionsCssSelector =  "div.wM6W7d ";
+    public String suggestionsCssSelector =  "div.wM6W7d "; //css element for search suggestions
 
     /**
      * Method to set the search input text.
