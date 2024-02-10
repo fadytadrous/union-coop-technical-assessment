@@ -5,7 +5,7 @@
 |No.| Name |Expected Results|Preconditions|Test Data|Priority|
 |--|:---:|--------------|:------:|:---:|:----:|
 |1|User Registration | New user  register successfully on the app.|||High|
-|2 | User Login |Existing user log in to the app without any issues.|User has already registered|Registered Email and Password|High|
+|2 | User Login |Existing users log in to the app without any issues.|User has already registered|Registered Email and Password|High|
 |3|Browsing Products| User browse and view products by different categories.|||Medium|
 |4|Product Search|  Search for products using the search functionality.|||High|
 |5|Viewing Product Details| User view detailed information about a product.|||High|
@@ -19,8 +19,8 @@
 |13|Check Screen rotation with the app |App will be rotated through various pages.||Medium|
 |14|Check switching smartphone themes|App will remain working |||Low|
 |15|Check App running in background | App will remain working depending on power saving mode |||Low|
-|16|Share a board| board will be shared with a shortened URL using the desired platform  |||1|
-|17|Create a private board| board will be created with no ability to invite others  |||1|
+|16|Reset password using verification code| User reset password with verification code by Email or SMS |User has already registered||High|
+|17|Check Application offers|Offers are working correctly for the user  |||High|
 ---
 
 ## Test Cases for Search Page
