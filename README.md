@@ -1,3 +1,26 @@
+
+
+## High-level test Scenarios For Jumia App 
+
+|No.| Name |Expected Results|Preconditions|Test Data|Priority|
+|--|:---:|--------------|:------:|:---:|:----:|
+|1|User Registration | New user  register successfully on the app.|||High|
+|2 | User Login |Existing user log in to the app without any issues.|User has already registered|Registered Email and Password|High|
+|3|Browsing Products| User browse and view products by different categories.|||Medium|
+|4|Product Search|  Search for products using the search functionality.|||High|
+|5|Viewing Product Details| User view detailed information about a product.|||High|
+|6|Adding to Cart |user add products to their shopping cart without any issues.|User is logged in to the app.||High|
+|7|Cart Management|user add,remove or edit items in their shopping cart. |User is logged in to the app and has items in the cart.||High|
+|8|Checkout Functionality |User  successfully complete the checkout process.|||High|
+|9|Check different payment options|User choose from different payment and can successfully complete an order using any payment option|User is logged in to the app and has items in the cart.||High|
+|10|Order Tracking| User can track the status of their orders.|||Medium|
+|11|Editing user profile| User can update their account information. |||Low|
+|12|Check disabling different App permisions| App will be working according to the allowed permisions only  |||Medium|
+|13|Check Screen rotation with the app |App will be rotated through various pages.||Medium|
+|14|Check switching smartphone themes|App will remain working |||Low|
+|15|Check App running in background | App will remain working depending on power saving mode |||Low|
+|16|Share a board| board will be shared with a shortened URL using the desired platform  |||1|
+|17|Create a private board| board will be created with no ability to invite others  |||1|
 ---
 
 ## Test Cases for Search Page
